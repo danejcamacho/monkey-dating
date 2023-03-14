@@ -4,43 +4,78 @@
 </script>
 
 <main>
-  <div>
-    <a href="https://vitejs.dev" target="_blank" rel="noreferrer"> 
-      <img src="/vite.svg" class="logo" alt="Vite Logo" />
-    </a>
-    <a href="https://svelte.dev" target="_blank" rel="noreferrer"> 
-      <img src={svelteLogo} class="logo svelte" alt="Svelte Logo" />
-    </a>
-  </div>
-  <h1>Vite + Svelte</h1>
-
-  <div class="card">
-    <Counter />
-  </div>
-
-  <p>
-    Check out <a href="https://github.com/sveltejs/kit#readme" target="_blank" rel="noreferrer">SvelteKit</a>, the official Svelte app framework powered by Vite!
-  </p>
-
-  <p class="read-the-docs">
-    Click on the Vite and Svelte logos to learn more
-  </p>
+  <header>
+    <h1>Monkey Dating</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="featured">
+      <h2>Featured Monkeys</h2>
+      <ul>
+        <li>
+          <img src="https://placehold.it/200x200" alt="Monkey Profile Picture">
+          <h3>Monkey Name</h3>
+          <p>Age: 5 years</p>
+          <p>Location: Jungle</p>
+          <a href="#" class="btn">View Profile</a>
+        </li>
+        <li>
+          <img src="https://placehold.it/200x200" alt="Monkey Profile Picture">
+          <h3>Monkey Name</h3>
+          <p>Age: 6 years</p>
+          <p>Location: Rainforest</p>
+          <a href="#" class="btn">View Profile</a>
+        </li>
+        <li>
+          <img src="https://placehold.it/200x200" alt="Monkey Profile Picture">
+          <h3>Monkey Name</h3>
+          <p>Age: 4 years</p>
+          <p>Location: Mountain</p>
+          <a href="#" class="btn">View Profile</a>
+        </li>
+      </ul>
+    </section>
+    <section class="search">
+      <h2>Find a Monkey</h2>
+      <form>
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" placeholder="Enter location">
+        <label for="age">Age:</label>
+        <select id="age" name="age">
+          <option value="">Select age</option>
+          <option value="1">1 year</option>
+          <option value="2">2 years</option>
+          <option value="3">3 years</option>
+          <option value="4">4 years</option>
+          <option value="5">5 years</option>
+          <option value="6">6 years</option>
+          <option value="7">7 years</option>
+          <option value="8">8 years</option>
+          <option value="9">9 years</option>
+          <option value="10+">10+ years</option>
+        </select>
+        <button type="submit" class="btn">Search</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Monkey Dating</p>
+  </footer>
 </main>
 
 <style>
-  .logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-    transition: filter 300ms;
+
+  nav ul {
+  list-style: none;
   }
-  .logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
+  .featured ul {
+    list-style: none;
   }
-  .logo.svelte:hover {
-    filter: drop-shadow(0 0 2em #ff3e00aa);
-  }
-  .read-the-docs {
-    color: #888;
-  }
+
 </style>
