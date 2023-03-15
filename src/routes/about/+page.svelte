@@ -18,6 +18,8 @@
     <p>Here at Monkey Dating, we believe in love at first sight. But nowadays, finding a partner is rough.
         Monkey Dating makes it easy. <br><br> At Monkey Dating, we're dedicated to helping monkeys find their perfect match. Our goal is to create a safe and fun environment where
         monkeys of all backgrounds can connect with each other and form meaningful relationships. </p>
+
+    <h2>Frequently Asked Questions</h2>
     <ul>
         <li>Q: Is this website only for monkeys?<br>
             A: Yes, this website is exclusively for monkeys to find compatible partners and make meaningful connections.
@@ -32,7 +34,7 @@
         <li>
             Q: How do I know the monkeys I see online are real monkeys?<br>
             A: First of all, why WOULDN'T they be real monkeys, second of all, they are real dude, stop asking questions. Here's a banana, now go away
-            <img src= "/banana.jpg"/>
+            <img src= "/banana.jpg" alt = banana/>
         </li>
         
     
@@ -51,9 +53,7 @@
 nav ul {
     list-style: none;
     }
-    .featured ul {
-      list-style: none;
-    }
+    
     * {
     box-sizing: border-box;
     margin: 0;
@@ -100,16 +100,9 @@ nav ul {
   }
   
   /* Featured section styles */
-  .featured {
-    margin-bottom: 40px;
-  }
   
-  .featured h2 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 20px;
-  }
+  
+  
   
   ul {
     display: flex;
@@ -140,12 +133,7 @@ nav ul {
     margin-bottom: 20px;
   }
   
-  h3 {
-    font-size: 20px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-  }
+  
   
   p {
     font-size: 16px;
@@ -153,92 +141,16 @@ nav ul {
     margin-bottom: 10px;
   }
   
-  .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
   
-  .btn:hover {
-    background-color: #555;
-  }
   
-  /* Search section styles */
-  .search h2 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-  }
+ 
         
   .featured ul li img {
     display: block;
     margin: 0 auto;
   }
   
-  /* Styling for the search section */
-  .search {
-    text-align: center;
-  }
   
-  .search h2 {
-    font-size: 2rem;
-    margin-top: 40px;
-  }
-  
-  .search form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .search label {
-    font-weight: bold;
-    margin-right: 10px;
-    display: inline-block;
-  }
-  
-  .search input[type="text"],
-  .search select {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    margin-right: 5px;
-    margin-bottom: 0px;
-    width: 200px;
-  }
-  
-  .search button {
-    background-color: #00bcd4;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    display: inline-block;
-  }
-  
-  .search button:hover {
-    background-color: #007a8a;
-  }
   
   .logo{
     width: 100px;
