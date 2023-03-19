@@ -1,8 +1,8 @@
 
 <main>
     <header>
-        <img class = "logo" src = "/logo.jpg" alt = logo/>
-      <h1>Monkey Dating</h1>
+      <a href="/"><img class = "logo" src = "/logo.jpg" href="/" alt = logo/></a>
+      <a href="/"><h1>Monkey Dating</h1></a>
       <nav>
         <ul>
           <li><a href="/">Home</a></li>
@@ -64,7 +64,7 @@ nav ul {
   
   /* Main styles */
   main {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 20px;
     font-family:   Arial, sans-serif;
@@ -77,7 +77,10 @@ nav ul {
     align-items: center;
     margin-bottom: 20px;
   }
-  
+  a:link { text-decoration: none; }
+  a:visited { text-decoration: none; }
+  a:hover { text-decoration: none; }
+  a:active { text-decoration: none; }
   h1 {
     font-size: 36px;
     font-weight: bold;

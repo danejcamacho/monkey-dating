@@ -1,13 +1,14 @@
-<script>  
-    
+<script>
+    import { page } from '$app/stores'
+    let string = $page.params.profile
+    let lower = string.toLowerCase()
+    const profile = string.charAt(0).toUpperCase() + lower.slice(1)
 
 </script>
-  
-  
-  <main>
+<main>
     <header>
-    <a href="/"><img class = "logo" src = "/logo.jpg" href="/" alt = logo/></a>
-      <h1>Monkey Dating</h1>
+        <a href ="/"><img class = "logo" src = "/logo.jpg" alt = logo/></a>
+        <a href ="/"><h1>Monkey Dating</h1></a>
       <nav>
         <ul>
           <li><a href="/">Home</a></li>
@@ -16,70 +17,22 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <section class="featured">
-        <h2>Featured Monkeys</h2>
-        <ul>
-          <li>
-            <img src="Charlie.jpg" alt="Monkey Profile">
-            <h3>Charlie</h3>
-            <p>Age: 5 years</p>
-            <p>Location: Jungle</p>
-            <a href="/profiles/Charlie" class="btn">View Profile</a>
-          </li>
-          <li>
-            <img src="/Justin.jpg" alt="Monkey Profile">
-            <h3>Justin</h3>
-            <p>Age: 6 years</p>
-            <p>Location: Rainforest</p>
-            <a href="/profiles/Justin" class="btn">View Profile</a>
-          </li>
-          <li>
-            <img src="/Karni.jpg" alt="Monkey Profile">
-            <h3>Karni</h3>
-            <p>Age: 4 years</p>
-            <p>Location: Mountain</p>
-            <a href="/profiles/Karni" class="btn">View Profile</a>
-          </li>
-          <li>
-            <img src="/Aaron.jpg" alt="Monkey Profile">
-            <h3>Aaron</h3>
-            <p>Age: 4 years</p>
-            <p>Location: Mountain</p>
-            <a href="/profiles/Aaron" class="btn">View Profile</a>
-          </li>
-        </ul>
-      </section>
-      <section class="search">
-        <h2>Find a Monkey</h2>
-        <form>
-          <label for="location">Location:</label>
-          <input type="text" id="location" name="location" placeholder="Enter location">
-          <label for="age">Age:</label>
-          <select id="age" name="age">
-            <option value="">Select age</option>
-            <option value="1">1 year</option>
-            <option value="2">2 years</option>
-            <option value="3">3 years</option>
-            <option value="4">4 years</option>
-            <option value="5">5 years</option>
-            <option value="6">6 years</option>
-            <option value="7">7 years</option>
-            <option value="8">8 years</option>
-            <option value="9">9 years</option>
-            <option value="10+">10+ years</option>
-          </select>
-          <button type="submit" class="btn">Search</button>
-        </form>
-      </section>
-    </main>
-    <footer>
-      <p>&copy; 2023 Monkey Dating Inc. All rights reserved.</p>
-  </footer>
-  </main>
-  
-  <style>
-  
+
+    <h1> { profile }'s Page </h1>
+
+    <img src="/{profile}.jpg" alt="profile"/>
+
+    
+
+
+</main>
+
+
+
+
+
+<style>
+    
     nav ul {
     list-style: none;
     }
@@ -113,12 +66,12 @@
   a:visited { text-decoration: none; }
   a:hover { text-decoration: none; }
   a:active { text-decoration: none; }
+  
   h1 {
     font-size: 36px;
     font-weight: bold;
     color: #333;
   }
-
   
   nav ul {
     list-style: none;
@@ -141,7 +94,7 @@
   }
   
   .featured h2 {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bold;
     color: #333;
     margin-bottom: 20px;
@@ -175,6 +128,11 @@
     object-fit: cover;
     margin-bottom: 20px;
   }
+  .logo{
+    width: 100px;
+    height: 100px;
+    
+  }
   
   h3 {
     font-size: 20px;
@@ -199,28 +157,9 @@
     transition: background-color 0.3s ease;
   }
   
-  .btn:hover {
-    background-color: #555;
-  }
+
   
-  /* Search section styles */
-  .search h2 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-  }
+
         
   .featured ul li img {
     display: block;
@@ -275,10 +214,4 @@
   .search button:hover {
     background-color: #007a8a;
   }
-  .logo{
-    width: 100px;
-    height: 100px;
-    
-  }
-  </style>
-  
+</style>

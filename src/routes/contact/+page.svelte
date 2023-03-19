@@ -1,7 +1,7 @@
 <main>
 <header>
-    <img class = "logo" src = "/logo.jpg" alt = logo/>
-    <h1>Monkey Dating</h1>
+    <a href="/"><img class = "logo" src = "/logo.jpg" alt = logo/></a>
+    <a href="/"><h1>Monkey Dating</h1></a>
     <nav>
       <ul>
         <li><a href="/">Home</a></li>
@@ -15,22 +15,24 @@
 
 <ul>
     <li><h3>David</h3>
-        <img src="/gorilla.jpg" alt = monke/>
+        <img src="/Justin.jpg" alt = monke/>
         <h3>Method of Contact:</h3>
         <p>Bang stick on rock</p>
     </li>
     <li><h3>Dane</h3>
-        <img src="/gorilla.jpg" alt = monke/>
+        <img src="/Justin.jpg" alt = monke/>
         <h3>Method of Contact:</h3>
         <p>Bang rock on stick;<br> wait for smoke signal</p>
     </li>
     <li><h3>Chris</h3>
-        <img src="/gorilla.jpg" alt = monke/>
+        <img src="/Justin.jpg" alt = monke/>
         <h3>Method of Contact:</h3>
         <p>Email: chrispenavelez@gmail.com</p>
     </li>
 </ul>
-
+<footer>
+  <p>&copy; 2023 Monkey Dating Inc. All rights reserved.</p>
+</footer>
 
 </main>
 <style>
@@ -51,7 +53,7 @@
   
   /* Main styles */
   main {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 20px;
     font-family:   Arial, sans-serif;
@@ -64,7 +66,10 @@
     align-items: center;
     margin-bottom: 20px;
   }
-  
+  a:link { text-decoration: none; }
+  a:visited { text-decoration: none; }
+  a:hover { text-decoration: none; }
+  a:active { text-decoration: none; }
   h1 {
     font-size: 36px;
     font-weight: bold;
