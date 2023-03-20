@@ -16,8 +16,6 @@ A primitive dating app for Monkeys! This project is a submission for the CSUF AC
 ![image](https://user-images.githubusercontent.com/71571206/226246517-62f749ef-6e96-4284-8121-a2de068478cc.png)
 
 
-* 
-
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
