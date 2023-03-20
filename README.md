@@ -6,7 +6,7 @@ A primitive dating app for Monkeys! This project is a submission for the CSUF AC
 * Add Profile Form
 * Profile Pages
 
-![Animation](https://user-images.githubusercontent.com/71571206/226248664-2b0d4339-a721-48a4-b019-ba72e8a83220.gif)
+![Animation](https://user-images.githubusercontent.com/71571206/226253316-25d89792-7926-468c-9b30-74394bed1450.gif)
 
 
 ![image](https://user-images.githubusercontent.com/71571206/226246617-1775439d-fa20-4d49-a0d2-64fdd81f1189.png)
