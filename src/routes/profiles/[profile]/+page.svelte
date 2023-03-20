@@ -1,8 +1,13 @@
 <script>
+    import Image from "./Image.svelte"
+    
     import { page } from '$app/stores'
     let string = $page.params.profile
     let lower = string.toLowerCase()
     const profile = string.charAt(0).toUpperCase() + lower.slice(1)
+
+	  
+    
 
 </script>
 <main>
@@ -20,11 +25,21 @@
 
     <h1> { profile }'s Page </h1>
 
-    <img src="/{profile}.jpg" alt="profile"/>
-
-    
-
-
+    <Image src= "/{profile}.jpg"></Image>
+    <img src="/{profile}.jpg" alt=""/>
+    <br>
+    <h2>{profile} likes ...</h2>
+    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie suscipit ex, sed mollis dolor. Phasellus euismod est ut purus tempus lobortis. Ut ullamcorper orci eget tortor dapibus iaculis. Maecenas eu condimentum nisi. Quisque consequat venenatis sodales. Duis eu fringilla sem, ac bibendum urna. Nunc gravida metus sed cursus aliquet. Nullam ac lectus ut nulla aliquet porttitor. Sed nunc justo, bibendum sed hendrerit non, porta sodales velit. Ut mattis ante quis nisi vulputate pellentesque. Aliquam dui nunc, gravida a lacus ac, accumsan sodales mauris. Pellentesque eros felis, molestie nec tellus id, aliquet sodales nunc. Duis velit libero, mattis eget finibus eget, ullamcorper et nunc. Suspendisse semper nibh ac leo efficitur, congue posuere ipsum iaculis. Nulla blandit fringilla sagittis. "</p>
+    <br>
+    <h2>{profile} dislikes ...</h2>
+    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie suscipit ex, sed mollis dolor. Phasellus euismod est ut purus tempus lobortis. Ut ullamcorper orci eget tortor dapibus iaculis. Maecenas eu condimentum nisi. Quisque consequat venenatis sodales. Duis eu fringilla sem, ac bibendum urna. Nunc gravida metus sed cursus aliquet. Nullam ac lectus ut nulla aliquet porttitor. Sed nunc justo, bibendum sed hendrerit non, porta sodales velit. Ut mattis ante quis nisi vulputate pellentesque. Aliquam dui nunc, gravida a lacus ac, accumsan sodales mauris. Pellentesque eros felis, molestie nec tellus id, aliquet sodales nunc. Duis velit libero, mattis eget finibus eget, ullamcorper et nunc. Suspendisse semper nibh ac leo efficitur, congue posuere ipsum iaculis. Nulla blandit fringilla sagittis. "</p>
+    <br>
+    <h2>Hobbies</h2>
+    <ul>
+      <li>Lorem Impsum</li>
+      <li>Lorem Impsum</li>
+      <li>Banana</li>
+    </ul>
 </main>
 
 
@@ -36,16 +51,14 @@
     nav ul {
     list-style: none;
     }
-    .featured ul {
-      list-style: none;
-    }
+    
     * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
   
-
+  
   
   /* Main styles */
   main {
@@ -89,36 +102,9 @@
   }
   
   /* Featured section styles */
-  .featured {
-    margin-bottom: 40px;
-  }
-  
-  .featured h2 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 20px;
-  }
   
   ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
   }
   
   img {
@@ -134,84 +120,5 @@
     
   }
   
-  h3 {
-    font-size: 20px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-  }
   
-  p {
-    font-size: 16px;
-    color: #777;
-    margin-bottom: 10px;
-  }
-  
-  .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-
-  
-
-        
-  .featured ul li img {
-    display: block;
-    margin: 0 auto;
-  }
-  
-  /* Styling for the search section */
-  .search {
-    text-align: center;
-  }
-  
-  .search h2 {
-    font-size: 2rem;
-    margin-top: 40px;
-  }
-  
-  .search form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .search label {
-    font-weight: bold;
-    margin-right: 10px;
-    display: inline-block;
-  }
-  
-  .search input[type="text"],
-  .search select {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    margin-right: 5px;
-    margin-bottom: 0px;
-    width: 200px;
-  }
-  
-  .search button {
-    background-color: #00bcd4;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    display: inline-block;
-  }
-  
-  .search button:hover {
-    background-color: #007a8a;
-  }
 </style>

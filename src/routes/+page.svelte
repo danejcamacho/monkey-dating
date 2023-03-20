@@ -4,26 +4,29 @@
         name: "Justin",
         pic: "/Justin.jpg",
         age: 6,
-        location: "Rainforest"
+        location: "Rainforest",
+        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie suscipit ex, sed mollis dolor. Phasellus euismod est ut purus tempus lobortis. Ut ullamcorper orci eget tortor dapibus iaculis. Maecenas eu condimentum nisi. Quisque consequat venenatis sodales. Duis eu fringilla sem, ac bibendum urna. Nunc gravida metus sed cursus aliquet. Nullam ac lectus ut nulla aliquet porttitor. Sed nunc justo, bibendum sed hendrerit non, porta sodales velit. Ut mattis ante quis nisi vulputate pellentesque. Aliquam dui nunc, gravida a lacus ac, accumsan sodales mauris. Pellentesque eros felis, molestie nec tellus id, aliquet sodales nunc. Duis velit libero, mattis eget finibus eget, ullamcorper et nunc. Suspendisse semper nibh ac leo efficitur, congue posuere ipsum iaculis. Nulla blandit fringilla sagittis. "
       },
       {
         name: "Charlie",
         pic: "/Charlie.jpg",
         age: 5,
-        location: "Jungle"
+        location: "Jungle",
+        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie suscipit ex, sed mollis dolor. Phasellus euismod est ut purus tempus lobortis. Ut ullamcorper orci eget tortor dapibus iaculis. Maecenas eu condimentum nisi. Quisque consequat venenatis sodales. Duis eu fringilla sem, ac bibendum urna. Nunc gravida metus sed cursus aliquet. Nullam ac lectus ut nulla aliquet porttitor. Sed nunc justo, bibendum sed hendrerit non, porta sodales velit. Ut mattis ante quis nisi vulputate pellentesque. Aliquam dui nunc, gravida a lacus ac, accumsan sodales mauris. Pellentesque eros felis, molestie nec tellus id, aliquet sodales nunc. Duis velit libero, mattis eget finibus eget, ullamcorper et nunc. Suspendisse semper nibh ac leo efficitur, congue posuere ipsum iaculis. Nulla blandit fringilla sagittis. "
       },
       {
         name: "Karni",
         pic: "/Karni.jpg",
         age: 4,
-        location: "Mountain"
-
+        location: "Mountain",
+        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie suscipit ex, sed mollis dolor. Phasellus euismod est ut purus tempus lobortis. Ut ullamcorper orci eget tortor dapibus iaculis. Maecenas eu condimentum nisi. Quisque consequat venenatis sodales. Duis eu fringilla sem, ac bibendum urna. Nunc gravida metus sed cursus aliquet. Nullam ac lectus ut nulla aliquet porttitor. Sed nunc justo, bibendum sed hendrerit non, porta sodales velit. Ut mattis ante quis nisi vulputate pellentesque. Aliquam dui nunc, gravida a lacus ac, accumsan sodales mauris. Pellentesque eros felis, molestie nec tellus id, aliquet sodales nunc. Duis velit libero, mattis eget finibus eget, ullamcorper et nunc. Suspendisse semper nibh ac leo efficitur, congue posuere ipsum iaculis. Nulla blandit fringilla sagittis. "
       },
       {
         name: "Aaron",
         pic: "/Aaron.jpg",
         age: 4,
-        location: "Rainforest"
+        location: "Rainforest",
+        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie suscipit ex, sed mollis dolor. Phasellus euismod est ut purus tempus lobortis. Ut ullamcorper orci eget tortor dapibus iaculis. Maecenas eu condimentum nisi. Quisque consequat venenatis sodales. Duis eu fringilla sem, ac bibendum urna. Nunc gravida metus sed cursus aliquet. Nullam ac lectus ut nulla aliquet porttitor. Sed nunc justo, bibendum sed hendrerit non, porta sodales velit. Ut mattis ante quis nisi vulputate pellentesque. Aliquam dui nunc, gravida a lacus ac, accumsan sodales mauris. Pellentesque eros felis, molestie nec tellus id, aliquet sodales nunc. Duis velit libero, mattis eget finibus eget, ullamcorper et nunc. Suspendisse semper nibh ac leo efficitur, congue posuere ipsum iaculis. Nulla blandit fringilla sagittis. "
       }
 
     ]
