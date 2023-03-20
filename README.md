@@ -1,12 +1,22 @@
 # Monkey Dating
 A primitive dating app for Monkeys! This project is a submission for the CSUF ACM mini-hackathon.
-![2023-03-15 15 32 35](https://user-images.githubusercontent.com/71571206/225458332-ce58bb6a-ab4e-45c2-a775-2e88205651f8.gif)
+# What we updated
+* About Page
+* Contact Page
+* Add Profile Form
+* Profile Pages
 
-<img width="601" alt="Screenshot 2023-03-15 at 3 33 56 PM" src="https://user-images.githubusercontent.com/71571206/225458600-0abb9c66-f477-4398-9346-1605d6f3d9af.png">
+![Animation](https://user-images.githubusercontent.com/71571206/226253316-25d89792-7926-468c-9b30-74394bed1450.gif)
 
-<img width="518" alt="Screenshot 2023-03-15 at 3 34 07 PM" src="https://user-images.githubusercontent.com/71571206/225458605-899ee149-f449-4d1d-977f-d04fcf251893.png">
 
-<img width="698" alt="Screenshot 2023-03-15 at 3 33 46 PM" src="https://user-images.githubusercontent.com/71571206/225458613-006d7c51-e6cd-4896-99ce-844c27f0b00b.png">
+![image](https://user-images.githubusercontent.com/71571206/226246617-1775439d-fa20-4d49-a0d2-64fdd81f1189.png)
+
+![image](https://user-images.githubusercontent.com/71571206/226246495-7d7518d1-80f5-41af-baa9-d652f3d7ac2b.png)
+
+![image](https://user-images.githubusercontent.com/71571206/226246517-62f749ef-6e96-4284-8121-a2de068478cc.png)
+
+
+* 
 
 # create-svelte
 
