@@ -1,6 +1,6 @@
 # Monkey Dating
 A primitive dating app for Monkeys! This project is a submission for the CSUF ACM mini-hackathon.
-#What we updated
+# What we updated
 * About Page
 * Contact Page
 * Add Profile Form
