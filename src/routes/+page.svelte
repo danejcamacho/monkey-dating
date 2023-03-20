@@ -94,9 +94,9 @@
         
         <label for= "pic">Profile Pic: <input type="file"/>  </label>
         
-        <label for= "age">Age: <input  bind:value = {age} type= "text"/></label>
+        <label for= "age">Age: <input  bind:value = {age} type= "text" placeholder="Enter age"/></label>
         
-        <label for= "location">Location: <input  bind:value = {location} type= "text"></label> 
+        <label for= "location">Location: <input  bind:value = {location} type= "text" placeholder="Enter location"/></label> 
 
         <button on:click = {addMonkey} type="submit" class="btn">Submit</button>
         
@@ -128,13 +128,13 @@
         <button type="submit" class="btn">Search</button>
       </form>
     </section>
+  
   </main>
-
 
   <footer>
     <p>&copy; 2023 Monkey Dating Inc. All rights reserved.</p>
   </footer>
-  
+
   
   <style>
   
@@ -161,6 +161,13 @@
 
   /* Main styles */
   main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family:   Arial, sans-serif;
+  }
+
+  footer {
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
