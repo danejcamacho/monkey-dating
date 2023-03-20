@@ -3,7 +3,7 @@ A primitive dating app for Monkeys! This project is a submission for the CSUF AC
 
 ![Animation](https://user-images.githubusercontent.com/71571206/226246020-3b71141b-366e-43b3-9ae9-46ca35e1f1b8.gif)
 
-![image](https://user-images.githubusercontent.com/71571206/226246464-ac899b32-4805-46ea-a134-7e52eb4027d7.png)
+![image](https://user-images.githubusercontent.com/71571206/226246617-1775439d-fa20-4d49-a0d2-64fdd81f1189.png)
 
 ![image](https://user-images.githubusercontent.com/71571206/226246495-7d7518d1-80f5-41af-baa9-d652f3d7ac2b.png)
 
