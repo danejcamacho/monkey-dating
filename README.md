@@ -1,7 +1,8 @@
 # Monkey Dating
 A primitive dating app for Monkeys! This project is a submission for the CSUF ACM mini-hackathon.
 
-![Animation](https://user-images.githubusercontent.com/71571206/226246020-3b71141b-366e-43b3-9ae9-46ca35e1f1b8.gif)
+![Animation](https://user-images.githubusercontent.com/71571206/226248664-2b0d4339-a721-48a4-b019-ba72e8a83220.gif)
+
 
 ![image](https://user-images.githubusercontent.com/71571206/226246617-1775439d-fa20-4d49-a0d2-64fdd81f1189.png)
 
@@ -9,7 +10,12 @@ A primitive dating app for Monkeys! This project is a submission for the CSUF AC
 
 ![image](https://user-images.githubusercontent.com/71571206/226246517-62f749ef-6e96-4284-8121-a2de068478cc.png)
 
-
+#What we updated
+* About Page
+* Contact Page
+* Add Profile Form
+* Profile Pages
+* 
 
 # create-svelte
 
