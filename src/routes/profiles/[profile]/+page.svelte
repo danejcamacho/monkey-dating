@@ -25,9 +25,8 @@
 
     <h1> { profile }'s Page </h1>
 
-    <Image src= "/{profile}.jpg"/>
+    <Image class = "pfp" src= "/{profile}.jpg"/>
     
-    <img src="/{profile}.jpg" alt=""/>
     
     <br>
     <h2>{profile} likes ...</h2>
@@ -86,6 +85,7 @@
     font-size: 36px;
     font-weight: bold;
     color: #333;
+    padding: 10px;
   }
   
   nav ul {
@@ -103,6 +103,16 @@
     font-weight: bold;
   }
   
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  }
   /* Featured section styles */
   
   ul {
