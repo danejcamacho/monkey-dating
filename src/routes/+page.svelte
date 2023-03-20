@@ -1,82 +1,137 @@
 <script>  
-    
+    let list = [
+      {
+        name: "Justin",
+        pic: "/Justin.jpg",
+        age: 6,
+        location: "Rainforest"
+      },
+      {
+        name: "Charlie",
+        pic: "/Charlie.jpg",
+        age: 5,
+        location: "Jungle"
+      },
+      {
+        name: "Karni",
+        pic: "/Karni.jpg",
+        age: 4,
+        location: "Mountain"
+
+      },
+      {
+        name: "Aaron",
+        pic: "/Aaron.jpg",
+        age: 4,
+        location: "Rainforest"
+      }
+
+    ]
+
+   
+
+    let name = "";
+    let pic = "/noProfilePic.jpg"
+    let age = "";
+    let location = "";
+  
+
+    function addMonkey(){
+      list.push({
+        name: name,
+        pic: pic,
+        age: age,
+        location: location
+      })
+      list = list;
+    };
+
 
 </script>
   
   
+
+  <header>
+  <a href="/"><img class = "logo" src = "/logo.jpg" href="/" alt = logo/></a>
+    <h1>Monkey Dating</h1>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
   <main>
-    <header>
-    <a href="/"><img class = "logo" src = "/logo.jpg" href="/" alt = logo/></a>
-      <h1>Monkey Dating</h1>
-      <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About Us</a></li>
-          <li><a href="/contact">Contact Us</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="featured">
-        <h2>Featured Monkeys</h2>
-        <ul>
-          <li>
-            <img src="Charlie.jpg" alt="Monkey Profile">
-            <h3>Charlie</h3>
-            <p>Age: 5 years</p>
-            <p>Location: Jungle</p>
-            <a href="/profiles/Charlie" class="btn">View Profile</a>
-          </li>
-          <li>
-            <img src="/Justin.jpg" alt="Monkey Profile">
-            <h3>Justin</h3>
-            <p>Age: 6 years</p>
-            <p>Location: Rainforest</p>
-            <a href="/profiles/Justin" class="btn">View Profile</a>
-          </li>
-          <li>
-            <img src="/Karni.jpg" alt="Monkey Profile">
-            <h3>Karni</h3>
-            <p>Age: 4 years</p>
-            <p>Location: Mountain</p>
-            <a href="/profiles/Karni" class="btn">View Profile</a>
-          </li>
-          <li>
-            <img src="/Aaron.jpg" alt="Monkey Profile">
-            <h3>Aaron</h3>
-            <p>Age: 4 years</p>
-            <p>Location: Mountain</p>
-            <a href="/profiles/Aaron" class="btn">View Profile</a>
-          </li>
-        </ul>
-      </section>
-      <section class="search">
-        <h2>Find a Monkey</h2>
-        <form>
-          <label for="location">Location:</label>
-          <input type="text" id="location" name="location" placeholder="Enter location">
-          <label for="age">Age:</label>
-          <select id="age" name="age">
-            <option value="">Select age</option>
-            <option value="1">1 year</option>
-            <option value="2">2 years</option>
-            <option value="3">3 years</option>
-            <option value="4">4 years</option>
-            <option value="5">5 years</option>
-            <option value="6">6 years</option>
-            <option value="7">7 years</option>
-            <option value="8">8 years</option>
-            <option value="9">9 years</option>
-            <option value="10+">10+ years</option>
-          </select>
-          <button type="submit" class="btn">Search</button>
-        </form>
-      </section>
-    </main>
-    <footer>
-      <p>&copy; 2023 Monkey Dating Inc. All rights reserved.</p>
-  </footer>
+    <section class="featured">
+      <h2>Featured Monkeys</h2>
+      <ul>
+        
+        {#each list as item}
+        <li>
+          
+          <img src= {item.pic} alt="Monkey Profile">
+          <h3>{item.name}</h3>
+          <p>Age: {item.age} years</p>
+          <p>Location: {item.location}</p>
+          <a href="/profiles/{item.name}" class="btn">View Profile</a>
+        
+        </li>
+        {/each}
+
+      </ul>
+    </section>
+
+    <section class="add">
+      <h2>Add a Monkey</h2>
+      <form>
+        <label for= "name">Name: <input bind:value = {name} type="text" placeholder="Enter name"></label>
+        
+        <label for= "pic">Profile Pic: <input type="file"/>  </label>
+        
+        <label for= "age">Age: <input  bind:value = {age} type= "text"/></label>
+        
+        <label for= "location">Location: <input  bind:value = {location} type= "text"></label> 
+
+        <button on:click = {addMonkey} type="submit" class="btn">Submit</button>
+        
+      </form>
+
+
+    </section>
+
+
+    <section class="search">
+      <h2>Find a Monkey</h2>
+      <form>
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" placeholder="Enter location">
+        <label for="age">Age:</label>
+        <select id="age" name="age">
+          <option value="">Select age</option>
+          <option value="1">1 year</option>
+          <option value="2">2 years</option>
+          <option value="3">3 years</option>
+          <option value="4">4 years</option>
+          <option value="5">5 years</option>
+          <option value="6">6 years</option>
+          <option value="7">7 years</option>
+          <option value="8">8 years</option>
+          <option value="9">9 years</option>
+          <option value="10+">10+ years</option>
+        </select>
+        <button type="submit" class="btn">Search</button>
+      </form>
+    </section>
   </main>
+
+
+  <footer>
+    <p>&copy; 2023 Monkey Dating Inc. All rights reserved.</p>
+  </footer>
+  
   
   <style>
   
@@ -92,8 +147,15 @@
     padding: 0;
   }
   
-
+  label {
+    padding: 10px;
+  }
   
+  .add form{
+    display: flex;
+    align-items: center;
+  }
+
   /* Main styles */
   main {
     max-width: 900px;
@@ -108,6 +170,10 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family:   Arial, sans-serif;
   }
   a:link { text-decoration: none; }
   a:visited { text-decoration: none; }
@@ -204,11 +270,14 @@
   }
   
   /* Search section styles */
-  .search h2 {
+  h2 {
     font-size: 24px;
     font-weight: bold;
     color: #333;
     margin-bottom: 20px;
+    justify-content: center;
+    font-size: 2rem;
+    margin-top: 40px;
   }
   
   form {
@@ -228,30 +297,25 @@
   }
   
   /* Styling for the search section */
-  .search {
-    text-align: center;
-  }
   
-  .search h2 {
-    font-size: 2rem;
-    margin-top: 40px;
-  }
   
-  .search form {
+  
+  
+  form {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 20px;
   }
   
-  .search label {
+  label {
     font-weight: bold;
     margin-right: 10px;
     display: inline-block;
   }
   
-  .search input[type="text"],
-  .search select {
+  input[type="text"],
+  select {
     padding: 10px;
     border-radius: 5px;
     border: none;
@@ -261,7 +325,7 @@
   }
   
   .search button {
-    background-color: #00bcd4;
+    background-color: #505353;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -271,9 +335,26 @@
     transition: background-color 0.3s ease;
     display: inline-block;
   }
+
+
+  .add button {
+    background-color: #505353;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+  }
+
+  .add button:hover {
+    background-color: #0da2b6;
+  }
   
   .search button:hover {
-    background-color: #007a8a;
+    background-color: #0da2b6;
   }
   .logo{
     width: 100px;

@@ -40,9 +40,7 @@
     nav ul {
     list-style: none;
     }
-    .featured ul {
-      list-style: none;
-    }
+    
     * {
     box-sizing: border-box;
     margin: 0;
@@ -92,16 +90,6 @@
   }
   
   /* Featured section styles */
-  .featured {
-    margin-bottom: 40px;
-  }
-  
-  .featured h2 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 20px;
-  }
   
   ul {
     display: flex;
@@ -150,15 +138,7 @@
     margin-bottom: 10px;
   }
   
-  .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
+  
   
 
   
@@ -169,52 +149,5 @@
     margin: 0 auto;
   }
   
-  /* Styling for the search section */
-  .search {
-    text-align: center;
-  }
   
-  .search h2 {
-    font-size: 2rem;
-    margin-top: 40px;
-  }
-  
-  .search form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .search label {
-    font-weight: bold;
-    margin-right: 10px;
-    display: inline-block;
-  }
-  
-  .search input[type="text"],
-  .search select {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    margin-right: 5px;
-    margin-bottom: 0px;
-    width: 200px;
-  }
-  
-  .search button {
-    background-color: #00bcd4;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    display: inline-block;
-  }
-  
-  .search button:hover {
-    background-color: #007a8a;
-  }
 </style>
